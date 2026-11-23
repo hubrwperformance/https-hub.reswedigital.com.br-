@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reswe Digital</title>
+  <meta name="description" content="Reswe Digital — performance e tráfego pago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --red: #e02c28; --ink: #111; --muted: #666; --bg: #fafafa; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg); color: var(--ink);
+      min-height: 100vh; display: flex; flex-direction: column;
+    }
+    header, footer { padding: 24px 32px; }
+    .logo { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; }
+    .logo span { color: var(--red); }
+    main {
+      flex: 1; display: flex; flex-direction: column; justify-content: center;
+      padding: 32px; max-width: 880px; margin: 0 auto; width: 100%;
+    }
+    .tag {
+      display: inline-block; align-self: flex-start;
+      font-size: 13px; font-weight: 600; color: var(--red);
+      border: 1px solid var(--red); border-radius: 999px; padding: 4px 12px; margin-bottom: 24px;
+    }
+    h1 { font-size: clamp(36px, 7vw, 64px); line-height: 1.05; letter-spacing: -2px; font-weight: 800; }
+    h1 em { font-style: normal; color: var(--red); }
+    p.lead { margin-top: 20px; font-size: 18px; line-height: 1.6; color: var(--muted); max-width: 560px; }
+    .cta {
+      margin-top: 32px; align-self: flex-start;
+      background: var(--red); color: #fff; text-decoration: none;
+      font-weight: 600; padding: 14px 24px; border-radius: 10px;
+    }
+    .cta:hover { filter: brightness(0.92); }
+    footer { font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header><div class="logo">reswe<span>.</span></div></header>
+  <main>
+    <span class="tag">Site em construção</span>
+    <h1>Performance que vira <em>resultado</em>.</h1>
+    <p class="lead">Estratégia, tráfego pago e conteúdo para negócios que querem crescer com previsibilidade. Nosso novo site está chegando.</p>
+    <a class="cta" href="mailto:contato@reswedigital.com.br">Fale com a gente</a>
+  </main>
+  <footer>© <span id="y"></span> Reswe Digital</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
